@@ -1,0 +1,21 @@
+\documentclass[autodetect-engine, a4paper, 11pt, oneside]{jsbook}
+
+\makeatletter 
+\def\input@path{{../}} 
+\makeatother
+
+\input{thesis_settings.tex}
+
+\begin{document}
+  \linesparpage{26}
+
+  \subfile{tex/title.tex}
+
+  \tableofcontents
+  \listoffigures
+  \listoftables
+  \linesparpage{30}
+  \newpage
+    
+  \subfile{tex/background.tex}
+\end{document}
