@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  22 DEC 2021 05:48
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  22 DEC 2021 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -452,13 +452,13 @@ LaTeX Info: Redefining \nameref on input line 9.
 \docmute@nestinglevel=\count295
 (./tex/title.tex
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 7.
+(Font)              scaled to size 19.9311pt on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 7.
+(Font)              scaled to size 19.9311pt on input line 8.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 15.
+(Font)              scaled to size 16.60605pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 15.
+(Font)              scaled to size 16.60605pt on input line 13.
  [1
 
 
@@ -536,21 +536,41 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ] [6] (./tex/element_technology.tex
 第2章
+File: tex/yolo_exp.png Graphic file (type bmp)
+<tex/yolo_exp.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 29.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 29.
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <9> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 29.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <9> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 29.
 ) [7
 
-] (./tex/proposed_method.tex
+] [8] (./tex/proposed_method.tex
 第3章
-) [8
-
-] (./tex/noname.tex
-第4章
 ) [9
+
+] (./tex/experiments.tex
+第4章
+) [10
 
 ] (./tex/summary.tex
 第5章
-)
+[11
+
+])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
- [10
+ [12
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
@@ -558,16 +578,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FBF89B2DF4CE9E5D3F6B39BA94A2BFAC;1363.
+(rerunfilecheck)             Checksum: 1074B6B0173C50E649579FA4D7D19E1D;1449.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
  ) 
 Here is how much of TeX's memory you used:
- 9244 strings out of 481768
- 132913 string characters out of 5933619
- 415536 words of memory out of 5000000
- 24454 multiletter control sequences out of 15000+600000
- 543928 words of font info for 81 fonts, out of 8000000 for 9000
+ 9276 strings out of 481768
+ 133411 string characters out of 5933619
+ 415812 words of memory out of 5000000
+ 24480 multiletter control sequences out of 15000+600000
+ 545097 words of font info for 87 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 37i,9n,38p,954b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,38p,954b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (11 pages, 24444 bytes).
+Output written on main.dvi (13 pages, 29780 bytes).

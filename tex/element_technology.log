@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  22 DEC 2021 10:48
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  22 DEC 2021 15:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -478,56 +478,74 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 5.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 5.
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 20.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 20.
+
+Package natbib Warning: Citation `yolo_paper' on page 1 undefined on input line 20.
+
 File: yolo_exp.png Graphic file (type bmp)
 <yolo_exp.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 25.
+(Font)              scaled to size 8.64899pt on input line 29.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 25.
+(Font)              scaled to size 8.64899pt on input line 29.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <9> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 25.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 25.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 25.
+(Font)              scaled to size 8.64899pt on input line 29.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <9> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 25.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 25.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 25.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 27.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 27.
+(Font)              scaled to size 8.64899pt on input line 29.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
 [1
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 32.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
  (./element_technology.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 27.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 32.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
 Package rerunfilecheck Info: File `element_technology.out' has not changed.
 (rerunfilecheck)             Checksum: 97E4CB6FE4D4E596AFABB322AF0B167B;379.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
- 9221 strings out of 481768
- 132940 string characters out of 5933619
- 412998 words of memory out of 5000000
- 24460 multiletter control sequences out of 15000+600000
- 541749 words of font info for 70 fonts, out of 8000000 for 9000
+ 9253 strings out of 481768
+ 133449 string characters out of 5933619
+ 413182 words of memory out of 5000000
+ 24479 multiletter control sequences out of 15000+600000
+ 543632 words of font info for 80 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 49i,6n,51p,503b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,9n,51p,503b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on element_technology.dvi (1 page, 4156 bytes).
+Output written on element_technology.dvi (2 pages, 5296 bytes).

@@ -1,11 +1,11 @@
 \documentclass[../main]{subfiles}
 \begin{document}
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{4}
     \chapter{要素技術}
         \section{トポロジカルマップ}
         私たちの身の回りには様々な種類の地図があり，活用されている．
-        例えば，Fig~に表すメトリックマップと呼ばれる地図は，普段人が目的地まで移動する際に用いられる．
-        しかし，本研究で用いているトポロジカルマップはFig~のような形をしている．メトリックマップがやや複雑な形をしているのに対し，
+        例えば，に表すメトリックマップと呼ばれる地図は，普段人が目的地まで移動する際に用いられる．
+        しかし，本研究で用いているトポロジカルマップはのような形をしている．メトリックマップがやや複雑な形をしているのに対し，
         トポロジカルマップはより簡潔に，環境を抽象的に表現することができる．
 
         
@@ -13,15 +13,20 @@
         Fig~では，赤い丸の図形で表現されているのがノードである．ノードには，地図の作成者が好きな情報を入れることができる．
         もう１つの要素であるエッジは，それぞれのノード同士を接続するのに用いられる．
         ノード同士に関係性がある場合，ノードとノードはエッジにより接続される．
+    
         \section{Neural Network}
         \section{Convolutional Neural Network(CNN)}
         \section{You Only Look Once(YOLO)}
-        YOLO[1]は，リアルタイム物体検出アルゴリズムである．画像のRGBデータの配列をCNNの入力として，
-        検出した物体の画像中の位置を表すバウンディングボックスの情報と，検出した物体のクラス名とその確率
-        をとして出力する.
+        本研究で用いるYOLO\cite{yolo_paper}は，リアルタイム物体検出アルゴリズムである．
+        YOLOは，画像のRGBデータの配列をCNNに入力し，画像中のどの範囲に物体が存在しているのかを表すバウンディングボックスの情報と，
+        ボックス内の物体がどのクラスに属しているのかを確率とともに表すクラス確率の情報を出力する．
+        \tref{figure::yolo_exp}は，YOLOを用いて画像中の物体を検出している様子である．左の画像データを入力した結果，
+        画像には３つの物体が写っており，それぞれの物体がPersonとして0.64，Dogとして0.30，Hoseとして0.28の確率で予測されていることが確認できる． 
+
         \begin{figure}[H]
         \centering
         \includegraphics[width=10cm]{yolo_exp.png}
-        \caption{The YOLO Detection System.}
+        \caption{The YOLO Detection System.(出典:Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, 『You Only Look Once: Unified, Real-Time Object Detection』, 2015年，1ページ)}
+        \label{figure::yolo_exp}
         \end{figure}
     \end{document}
