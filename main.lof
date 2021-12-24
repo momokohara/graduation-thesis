@@ -2,5 +2,8 @@
 \addvspace {10\jsc@mpt }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The YOLO Detection System.(出典:Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, 『You Only Look Once: Unified, Real-Time Object Detection』, 2015年，1ページ)}}{8}{figure.15}%
 \addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flow of passage recognition method.}}{10}{figure.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Preprocessing of spherical camera images.}}{10}{figure.21}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces An example of a dataset.}}{10}{figure.23}%
 \addvspace {10\jsc@mpt }
 \addvspace {10\jsc@mpt }
