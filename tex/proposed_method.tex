@@ -1,5 +1,5 @@
 \documentclass[../main]{subfiles}
-\usepackage{subcaption}
+    \begin{document}
     \setcounter{secnumdepth}{2}
     \chapter{提案手法}
         \section{全天球カメラに基づく通路認識手法}
@@ -9,9 +9,9 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[width=10cm]{new_aisle_type.png}
-            \label{figure::new_aisle_type}
+            \includegraphics[width=10cm]{../images/new_aisle_type.png}
             \caption{Type of passage.}
+            \label{figure::new_aisle_type}
         \end{figure}
         
         \newpage
@@ -22,7 +22,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[width=15cm]{proposed_method2.png}
+            \includegraphics[width=10cm]{../images/proposed_method2.png}
             \caption{Flow of passage recognition method.}
             \label{figure::proposed_method_fig}
             この例では，画像から通路が3つ検出されている．また，通路はロボットに対して\\
@@ -31,45 +31,35 @@
 
         \newpage
         
-        全天球カメラにより得られた画像は，後方の通路が見切れ学習後の精度確認の段階で通路の認識がうまくできていなかったため，
-        \fref{figure::image_proc_fig}に示すような画像の前処理を施した．
-        YOLOの学習モデル作成のため，自作のデータセットを作成し，学習を行う．画像データは，実験環境として想定している
-        本学の津田沼キャンパス2号館3階で実験につかうロボットに
-        全天球カメラを取り付けて収集した．データセットの一例を\fref{figure::dataset_fig}に示す．
-        また，データセットのクラスは\tref{table::datasets_table}の11クラスで設定した．
+        何も手を加えていない状態の全天球カメラ画像は，Fig~に示すように後方の通路が見切れてしまう．この状態の画像で学習を行なった結果，
+        見切れた状態の通路が学習に影響を与え，通路認識に支障が出てしまった．
+        そこで，\fref{figure::image_proc_fig}に示すような画像の前処理を行なった．この処理では，320*640の全天球カメラ画像の左端を切り取り，
+        右端に貼り付けるということを行なった．
+
+        YOLOのモデル作成のため，自作のデータセットにより学習を行う．学習に使うデータは津田沼キャンパス2号館3階で収集した．
+        また，データセットの一例を\fref{figure::dataset_fig}に示す．また，データセットのクラスは\tref{table::datasets_table}の11クラスで設定した．
         先行研究では，8つの形状タイプの通路の認識を行なったため，本研究でも先行研究と同様の通路認識を行う．
         次に，YOLOの出力として得られた通路の情報に基づき，を参考にし，画像中の通路が認識された箇所を場合分けし，通路の形状を決定する．
 
         \begin{figure}[htbp]
-            \begin{center}
-                \begin{tabular}{c}
-                \begin{minipage}{0.5\linewidth}
-                 \begin{center}
-                 \includegraphics[clip, height=6cm]{no_processing.png}
-                 \hspace{1.6cm}
-                 \end{center}
-                 \subcaption{Image before processing}
-                \end{minipage}
-                \begin{minipage}{0.5\linewidth}
-                 \begin{center}
-                 \includegraphics[clip, height=6cm]{after_processing.png}
-                 \subcaption{Preprocessed image}
-                 \end{center}
-                \end{minipage}
-                \end{tabular}
-                \caption{Preprocessing of spherical camera images.}
-            \end{center}
+          \centering
+           \subfigure[no processing image]{\includegraphics[width=10cm]{../images/no_processing.png}
+           \label{subfigure::no_proc}}
+           \subfigure[preprocessing image]{\includegraphics[width=10cm]{../images/after_processing.png}
+           \label{subfigure::preproc}}
+           \caption{Preprocessing of spherical camera images}
+           \label{figure::proc_exp}
         \end{figure}
 
         \begin{figure}[H]
         \centering  
-        \includegraphics[width=15cm]{image_proc2.png}
+        \includegraphics[width=10cm]{../images/image_proc2.png}
         \caption{Preprocessing of spherical camera images.}
         \label{figure::image_proc_fig}
         \end{figure}
 
         \begin{figure}[H]
-         \includegraphics[width=15cm]{dataset_exp.png}
+         \includegraphics[width=10cm]{../images/dataset_exp.png}
          \caption{An example of a dataset.}
          \label{figure::dataset_fig}
         \end{figure}
