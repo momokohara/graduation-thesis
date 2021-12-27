@@ -15,18 +15,20 @@
         ノード同士に関係性がある場合，ノードとノードはエッジにより接続される．
     
         \section{Neural Network}
+        \newpage
         \section{Convolutional Neural Network(CNN)}
         \section{You Only Look Once(YOLO)}
-        本研究で用いるYOLO\cite{yolo_paper}は，リアルタイム物体検出アルゴリズムである．
+        本研究で用いるYOLO\cite{yolo_paper_fig}は，リアルタイム物体検出アルゴリズムである．
         YOLOは，画像のRGBデータの配列をCNNに入力し，画像中のどの範囲に物体が存在しているのかを表すバウンディングボックスの情報と，
         ボックス内の物体がどのクラスに属しているのかを確率とともに表すクラス確率の情報を出力する．
-        \fref{figure::yolo_exp}は，YOLOを用いて画像中の物体を検出している様子であり，左の画像データを入力した結果，
-        画像からは３つの物体が検出されている．また，それぞれの物体がPerson：0.64，Dog：0.30，Hose：0.28の確率で予測されていることが確認できる． 
+        \fref{figure::yolo_exp}は，YOLOを用いて画像中の物体を検出している様子である． 
 
         \begin{figure}[H]
         \centering
         \includegraphics[width=10cm]{yolo_exp.png}
-        \caption{The YOLO Detection System.(出典:Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi, 『You Only Look Once: Unified, Real-Time Object Detection』, 2015年，1ページ)}
+        \caption{The YOLO Detection System.(出典:)}
         \label{figure::yolo_exp}
         \end{figure}
+        左の画像データを入力した結果，画像からは３つの物体が検出されている．
+        また，それぞれの物体がPerson 0.64，Dog 0.30，Hose 0.28の確率で予測されていることが確認できる．
     \end{document}
