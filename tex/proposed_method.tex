@@ -5,9 +5,11 @@
     \setcounter{secnumdepth}{2}
     \chapter{提案手法}
         \section{提案手法の概要}
-        本研究は，全天球カメラから取得した画像に基づき，通路認識を行う手法の検証を行う．ここでいう通路認識とは，画像中に通路があるかどうかを検出するだけでなく，
-        画像中に通路がある場合，その通路がどのタイプに属するのかといった，通路の特徴を抽出することである．また，本研究で扱う通路のタイプは以下の８種類であり，
-        それぞれの図を\fref{figure::new_aisle_type}に示す．\\\\
+        本研究は，全天球カメラから取得した画像に基づき，通路認識を行う手法の検証を行う．
+        ここでいう通路認識とは，画像中に通路があるかどうかを認識するだけでなく，
+        画像中に通路がある場合，その通路がどのタイプに属するのかといった，
+        通路の特徴を抽出することである．
+        また，本研究で扱う通路のタイプは以下の８種類である．それぞれの図を\fref{figure::new_aisle_type}に示す．\\\\
          \circled{1}一本道（straight)\\
          \circled{2}行き止まり(dead end)\\
          \circled{3}右のみ曲がれる角(right)\\
@@ -21,14 +23,15 @@
         \vskip\baselineskip
 
         本手法の通路認識の流れを\fref{figure::proposed_method_fig}に示す．
-        まず，全天球カメラにより取得したRGBの画像配列データをYOLOの入力とし，出力されたバウンディングボックスとクラス確率の情報をもとに
-        画像中に通路があるかどうかを検出する．画像中に通路が検出された場合，通路の座標位置に基づき，通路のタイプを決定する．
+        まず，全天球カメラにより取得したRGBの画像配列データをYOLOの入力とし，
+        出力されたバウンディングボックスとクラス確率の情報をもとに画像中に通路があるかどうかを検出する．
+        画像中に通路が検出された場合，通路の座標位置に基づき，通路のタイプを決定する．
 
         %8タイプの通路の画像例
         \begin{figure}[H]
             \centering
             \includegraphics[width=10cm]{../images/new_aisle_type.png}
-            \caption{Type of passage.}
+            \caption{Type of passage}
             \label{figure::new_aisle_type}
         \end{figure}
         
@@ -36,7 +39,7 @@
         \begin{figure}[H]
             \centering
             \includegraphics[width=15cm]{../images/proposed_method2.png}
-            \caption{Flow of passage recognition method.}
+            \caption{Flow of passage recognition method}
             \label{figure::proposed_method_fig}
             この例では，YOLOの出力した画像から通路が3つ検出されている．\\
             また，通路はロボットに対して前方，後方，右手側に検出されているため，\\
@@ -46,12 +49,13 @@
         \newpage
 
         \section{画像の前処理}
-        全天球カメラで取得した画像は通常，\fref{figure::no_proc}に示すように，カメラの正面が画像の中心となり，真後ろは画像の左端と右端で見切れてしまう．
-        そこで，カメラに対する正面，真後ろ，真横（左右）にくる通路が見切れないように，YOLOに入力する前の段階で画像の前処理を行う．
-        
-        そこで，\fref{subfigure::preproc}に示すような画像の前処理を行なった．この処理では，320*640の全天球カメラ画像の左端を切り取り，
-        右端に貼り付けるということを行なった．
-        
+        全天球カメラで取得した画像は通常，\fref{subfigure::no_proc}に示すようにカメラの正面が画像の中心となり，後方の物体は画像の左端と右端で見切れてしまう．
+        本手法では前後左右の通路を扱うため，見切れている状態は通路の認識精度に影響を与える恐れがある．そこで，YOLOに入力する前の段階で\fref{subfigure::preproc}
+        に示すような画像の前処理を行う．
+        画像の前処理としては以下のことを行う．
+        ・画像のピクセル数を減らすため，960×1920から320×640の大きさにリサイズする
+        ・カメラの前後左右全ての通路が画像内に収まるように，画像の左端1/8を切り取り右端にスライドさせる
+    
         %画像の前処理の例
         \begin{figure}[htbp]
           \centering
@@ -65,11 +69,9 @@
         
         \newpage
 
-        \section{YOLOのデータセット作成}
-        YOLOのモデル作成のため，自作のデータセットにより学習を行う．学習に使うデータは津田沼キャンパス2号館3階で収集した．
-        また，データセットの一例を\fref{figure::dataset_fig}に示す．また，データセットのクラスは\tref{table::datasets_table}の11クラスで設定した．
-        先行研究では，8つの形状タイプの通路の認識を行なったため，本研究でも先行研究と同様の通路認識を行う．
-        次に，YOLOの出力として得られた通路の情報に基づき，を参考にし，画像中の通路が認識された箇所を場合分けし，通路の形状を決定する．
+        \section{学習用データの作成}
+        学習モデル作成のため，自作のデータセットにより学習を行う．学習に用いるデータは津田沼キャンパス2号館3階により収集し，作成した
+        データセットの一部を\fref{figure::dataset_fig}に示す．データセットのラベル数は11クラスで設定し，クラス名を\tref{table::datasets_table}に示す．    
 
         %自作データセットの画像例
         \begin{figure}[H]
@@ -81,7 +83,7 @@
 
         %データセットのクラス数
         \begin{table}[H]
-            \caption{Class name to be labeled.}
+            \caption{Class name to be labeled}
             \centering
             \label{table::datasets_table}
             \begin{tabular}{lllll}
@@ -101,7 +103,26 @@
             window            &  &  &  &  \\ 
             \hline
             \end{tabular}
+        \end{table}            
+
+        \section{学習の結果}
+        作成したデータセットを用いてYOLOv5により学習を行う．トレーニングに用いたネットワークを\fref{figure::}に示す．
+        また，学習に用いるデータセットの構成を\fref{table::learning}に示す．
+
+        \begin{table}[H]
+            \caption{}
+            \centering
+            \label{table::learning}
+            \begin{tabular}{l|l}
+            \hline
+            \multicolumn{1}{c|}{training}   & \multicolumn{1}{c|}{3540}                \\ \hline
+            \multicolumn{1}{c|}{test}       & \multicolumn{1}{c|}{126}                  \\ \hline
+            \multicolumn{1}{c|}{validation} & \multicolumn{1}{c|}{14}                  \\ \hline
+            \multicolumn{1}{c|}{epoch}      & \multicolumn{1}{c|}{300}                \\ \hline
+            \multicolumn{1}{c|}{batch}      & \multicolumn{1}{c|}{8}                   \\ \hline
+            \end{tabular}
         \end{table}
+
 \end{document}
 
 %\begin{figure}[H]

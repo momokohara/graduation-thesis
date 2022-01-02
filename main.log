@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  30 DEC 2021 19:00
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  31 DEC 2021 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -819,17 +819,26 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 19.9311pt on input line 8.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 13.
+(Font)              scaled to size 16.60605pt on input line 14.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 13.
+(Font)              scaled to size 16.60605pt on input line 14.
  [1
 
 
-])
+]
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 13.
+(Font)              scaled to size 9.60999pt on input line 22.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 13.
+(Font)              scaled to size 9.60999pt on input line 22.
+ [2])
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -838,20 +847,7 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 23.90964pt on input line 13.
- (./main.toc
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 28.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 28.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 28.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 28.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 28.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 28.
- [1
+ (./main.toc [1
 
 ])
 \tf@toc=\write5
@@ -889,26 +885,37 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 5.
 [7
 
-] [8]
+]
 File: tex/../images/18F_aisle_exp.jpg Graphic file (type bmp)
 <tex/../images/18F_aisle_exp.jpg>
- [9]) [10] (./tex/element_technology.tex
+ [8]) [9] (./tex/element_technology.tex
 第2章
 File: tex/../images/metric_map.png Graphic file (type bmp)
 <tex/../images/metric_map.png>
 
-Underfull \hbox (badness 1478) in paragraph at lines 21--21
+Underfull \hbox (badness 1478) in paragraph at lines 22--22
 []\OT1/cmr/m/n/8 (a) Map rep-re-sent-ing Chiba In-sti-tute
  []
 
 File: tex/../images/topological_map.png Graphic file (type bmp)
 <tex/../images/topological_map.png>
-[11
+[10
 
 ]
+File: tex/../images/scenario_fig.png Graphic file (type bmp)
+<tex/../images/scenario_fig.png>
+ [11] [12]
 File: tex/../images/NN.png Graphic file (type bmp)
 <tex/../images/NN.png>
- [12] [13] [14]
+ [13]
+File: tex/../images/cnn_exp.png Graphic file (type bmp)
+<tex/../images/cnn_exp.png>
+
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 71--72
+ [][] 
+ []
+
+[14]
 File: tex/../images/yolo_exp.png Graphic file (type bmp)
 <tex/../images/yolo_exp.png>
 ) [15] (./tex/proposed_method.tex
@@ -921,27 +928,28 @@ File: tex/../images/new_aisle_type.png Graphic file (type bmp)
 File: tex/../images/proposed_method2.png Graphic file (type bmp)
 <tex/../images/proposed_method2.png>
 
-Overfull \hbox (8.53766pt too wide) in paragraph at lines 38--39
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 41--42
  [][] 
  []
 
 [17]
-
-LaTeX Warning: Reference `figure::no_proc' on page 18 undefined on input line 49.
-
 File: tex/../images/no_processing.png Graphic file (type bmp)
 <tex/../images/no_processing.png>
 File: tex/../images/after_processing.png Graphic file (type bmp)
 <tex/../images/after_processing.png>
-[18]
+ [18]
 File: tex/../images/dataset_exp.png Graphic file (type bmp)
 <tex/../images/dataset_exp.png>
- [19]) [20] (./tex/experiments.tex
+
+
+LaTeX Warning: Reference `figure::' on page 19 undefined on input line 109.
+
+[19]) [20] (./tex/experiments.tex
 第4章
 File: tex/../images/MAP_Tsudanuma2-3.png Graphic file (type bmp)
 <tex/../images/MAP_Tsudanuma2-3.png>
 
-Overfull \hbox (136.82007pt too wide) in paragraph at lines 13--14
+Overfull \hbox (8.53766pt too wide) in paragraph at lines 13--14
  [][] 
  []
 
@@ -949,28 +957,28 @@ Overfull \hbox (136.82007pt too wide) in paragraph at lines 13--14
 
 ]
 
-LaTeX Warning: Reference `table::robot_kousei' on page 22 undefined on input line 20.
+LaTeX Warning: Reference `table::robot_spec' on page 22 undefined on input line 20.
 
 File: tex/../images/robot_figure1.png Graphic file (type bmp)
 <tex/../images/robot_figure1.png>
-[22]
+[22] [23]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 42.
+(Font)              scaled to size 11.53198pt on input line 61.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 42.
+(Font)              scaled to size 11.53198pt on input line 61.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 42.
+(Font)              scaled to size 11.53198pt on input line 61.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 42.
+(Font)              scaled to size 11.53198pt on input line 61.
 
 
-LaTeX Warning: Reference `figure::' on page 23 undefined on input line 45.
+LaTeX Warning: Reference `figure::' on page 24 undefined on input line 64.
 
-[23]) [24] (./tex/summary.tex
+) [24] [25] (./tex/summary.tex
 第5章
-) [25
+) [26
 
-] (./tex/reference.tex) [26
+] (./tex/reference.tex) [27
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
@@ -979,7 +987,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 29352AAD1F88D68E90BBC3B65386991E;1399.
+(rerunfilecheck)             Checksum: 31FB972279F20D2EA18862D97DAEF4D4;1516.
 
 
 LaTeX Warning: There were undefined references.
@@ -987,12 +995,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 35107 strings out of 481768
- 806805 string characters out of 5933619
- 1179167 words of memory out of 5000000
- 49954 multiletter control sequences out of 15000+600000
+ 35134 strings out of 481768
+ 807329 string characters out of 5933619
+ 1180420 words of memory out of 5000000
+ 49974 multiletter control sequences out of 15000+600000
  546199 words of font info for 92 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,9n,73p,793b,856s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,73p,793b,856s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (27 pages, 69832 bytes).
+Output written on main.dvi (29 pages, 78072 bytes).
