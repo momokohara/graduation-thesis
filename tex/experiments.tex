@@ -2,11 +2,11 @@
 \begin{document}
 \setcounter{secnumdepth}{3}
     \chapter{実験}
-    \section{実験の手順}
-        提案した通路認識の手法を2つのフェーズに分けて検証する．
-        1つ目のフェーズでは事前に実験環境で取得した画像データを用いて通路の認識ができるか検証する．
-        また，2つ目のフェーズでは機体に搭載したカメラからリアルタイムに取得する画像データを用いて通路認識を行い，
-        トポロジカルマップとシナリオによるナビゲーションに適用し，先行研究のLiDARを用いた手法と比較して有効性を検証する．
+    \section{実験目的}
+        本研究で提案した全天球カメラ画像に基づく通路分類手法の有効性を実環境での実験により検証する．
+    \section{実験の概要}
+        提案した通路分類手法の有効性を実環境での実験により検証する．
+        
         実験環境は\fref{figure::3floor_map}に示す千葉工業大学津田沼キャンパス2号館3階の廊下とした．
         \begin{figure}[H]
          \centering
@@ -18,7 +18,6 @@
     \section{実験装置}
         実験には本研究室で開発をしているORNE-αを用いた．また，機体とその構成，使用したPCのスペックをそれぞれ
         \fref{figure::robot_image}，\tref{table::robot_spec}，\tref{table::pc_spec}に示す．
-        
 
         \begin{figure}[H]
         \centering
@@ -48,32 +47,25 @@
             \multicolumn{1}{c|}{Height{[}mm{]}}                                                    & \multicolumn{1}{c}{810}                                  \\ \hline
             \multicolumn{1}{c|}{Weight{[}kg{]}}                                                    & \multicolumn{1}{c}{20}                                   \\ \hline
             \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Wheel diameter\\ {[}mm{]}\end{tabular}} & \multicolumn{1}{c}{304}                                   \\ \hline
-            \multicolumn{1}{c|}{2D LiDAR(front)}                                                   & \multicolumn{1}{c}{Hokuyo URM-40LC-EW}                   \\ \hline
-            \multicolumn{1}{c|}{2D LiDAR(back)}                                                    &                                        \\ \hline
-            \multicolumn{1}{c|}{IMU}                                                               & \multicolumn{1}{c}{Analog devices ADIS16465-2BMLZ}         \\ \hline
             \multicolumn{1}{c|}{Battery}                                                           & \multicolumn{1}{c}{LONG WP12-12 × 2}                      \\ \hline
             \multicolumn{1}{c|}{Motor}                                                             & \multicolumn{1}{c}{Oriental motor TF-M30-24-3500-G15L/R}  \\ \hline
             \end{tabular}
             \label{table::robog_spec}
             \end{table}
 
-    \section{実験1　事前取得のデータを用いた通路認識の検証}
-        \subsection{実験目的}
-        実験1では，あらかじめ実験環境で取得していた画像データを用いて通路の認識ができるか検証する．
+    \section{実環境での全天球カメラ画像を用いた通路分類の検証}
         \subsection{実験方法}
-        実験環境で取得した\fref{figure::}に示すような画像をYOLOに入力し，出力されたバウンディングボックスの情報とクラスの属性情報をテキストファイルに保存する．
-        次に，保存したテキストファイルを読み込み，通路のタイプを判定する．
-        用意した画像12枚を上記の方法で1枚ずつ読み込み，そこに写っている通路の認識を行う．
+        ロボットに全天球カメラを搭載して，カメラにより取得した画像データを用いて，提案手法により通路の特徴分類を行う．
+        Fig~に示す実験環境の●箇所に実ロボットを置き，各地点で得られた全天球カメラ画像から提案した手法により通路の分類を行う．
+        また，先行研究で述べられた通り，人が道案内により移動する際には，向いている方向の情報も必要としているため，
+        同一箇所においてもロボットの向いている方向により分類される通路の特徴が変化する場合，ロボットの向きを変え，各向きを向いた状態
+        を1例とし，正しく通路分類が行えるかどうか検証する．
+        本実験の環境では，同一箇所においてもロボットの向きで通路の特徴が異なる箇所が●箇所存在したため，全●例の通路分類ができるかを検証する．
+        ロボットの移動にはジョイスティックコントローラーを使用する．実験の条件として，突き当たりと通路の判定する境界は，
+        ５m先が行き止まりかどうかにより判断を行うこととする．
 
-        \subsection{結果}
-
-        \subsection{考察}
-    \section{実験2　ナビゲーション適用時の通路認識の検証}
-        \subsection{実験目的}
-
-        \subsection{実験方法}
-
-        \subsection{結果}
-
-        \subsection{考察}
+        \subsection{結果と考察}
+        実験の結果．●例中●例で正しく通路の特徴を分類することができた．
+        正しく分類ができた例の一部をFig~に示す．また，分類に失敗してしまった例の一部をFig〜に示す．
+        今回，分類に失敗した原因として，○○ということが考えられる．
 \end{document}
