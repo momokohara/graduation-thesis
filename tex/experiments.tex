@@ -3,10 +3,9 @@
 \setcounter{secnumdepth}{3}
     \chapter{実験}
     \section{実験目的}
-        本研究で提案した全天球カメラ画像に基づく通路分類手法の有効性を実環境での実験により検証する．
+        本研究で提案した全天球カメラ画像に基づく通路分類手法の有効性をロボットを用いた実環境での実験により検証する．
     \section{実験の概要}
-        提案した通路分類手法の有効性を実環境での実験により検証する．
-        
+        提案した通路分類手法の有効性をロボットを用いた実環境での実験により検証する．
         実験環境は\fref{figure::3floor_map}に示す千葉工業大学津田沼キャンパス2号館3階の廊下とした．
         \begin{figure}[H]
          \centering
@@ -49,20 +48,30 @@
             \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Wheel diameter\\ {[}mm{]}\end{tabular}} & \multicolumn{1}{c}{304}                                   \\ \hline
             \multicolumn{1}{c|}{Battery}                                                           & \multicolumn{1}{c}{LONG WP12-12 × 2}                      \\ \hline
             \multicolumn{1}{c|}{Motor}                                                             & \multicolumn{1}{c}{Oriental motor TF-M30-24-3500-G15L/R}  \\ \hline
+            \multicolumn{1}{c|}{Spherical camera}                                                  & \multicolumn{1}{c}{RICOH THETA V}  \\ \hline
             \end{tabular}
             \label{table::robog_spec}
             \end{table}
 
-    \section{実環境での全天球カメラ画像を用いた通路分類の検証}
+    \section{全天球カメラを用いた通路分類の検証}
         \subsection{実験方法}
-        ロボットに全天球カメラを搭載して，カメラにより取得した画像データを用いて，提案手法により通路の特徴分類を行う．
-        Fig~に示す実験環境の●箇所に実ロボットを置き，各地点で得られた全天球カメラ画像から提案した手法により通路の分類を行う．
+        全天球カメラを取り付けた実ロボットを実験環境の25地点に移動させ，各地点で全天球カメラにより取得した画像データを用いて，
+        提案手法により通路の特徴分類ができるかどうかを検証する．
+        \fref{figure::experiment_point}の丸い図形により示す実験環境の25箇所にロボットを移動させ，
+        各地点で取得した全天球カメラ画像から提案した手法により通路の分類を行う．
         また，先行研究で述べられた通り，人が道案内により移動する際には，向いている方向の情報も必要としているため，
         同一箇所においてもロボットの向いている方向により分類される通路の特徴が変化する場合，ロボットの向きを変え，各向きを向いた状態
         を1例とし，正しく通路分類が行えるかどうか検証する．
         本実験の環境では，同一箇所においてもロボットの向きで通路の特徴が異なる箇所が●箇所存在したため，全●例の通路分類ができるかを検証する．
         ロボットの移動にはジョイスティックコントローラーを使用する．実験の条件として，突き当たりと通路の判定する境界は，
         ５m先が行き止まりかどうかにより判断を行うこととする．
+
+        \begin{figure}[H]
+         \centering
+         \includegraphics[width=20cm]{../images/experiment_point.png}
+         \section{25 places to place robots in aisle classification experiments}
+         \label{figure::experiment_point}
+        \end{figure}
 
         \subsection{結果と考察}
         実験の結果．●例中●例で正しく通路の特徴を分類することができた．

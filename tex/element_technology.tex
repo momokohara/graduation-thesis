@@ -9,7 +9,6 @@
         トポロジカルマップはより簡潔に，環境を抽象的に表現することができる．
 
 
-
         トポロジカルマップは，大きく分けてノードとエッジの2つの要素により構成されている．
         \fref{subfigure::topological_map}では，赤い丸の図形で表現されているのがノードである．ノードには，地図の作成者が好きな情報を入れることができる．
         もう１つの要素であるエッジは，それぞれのノード同士を接続するのに用いられる．
@@ -18,28 +17,29 @@
         \begin{figure}[htbp]
             \centering
              \subfigure[Map representing Chiba Institute of Technology Shin-Narashino Campus with metric map（出典：国土地理院より一部を加
-             工して作成\cite{kokudotiriin}）]{\includegraphics[height=6cm]{../images/metric_map.png}
+             工して作成\cite{kokudotiriin}）]{\includegraphics[height=5cm]{../images/metric_map.png}
              \label{subfigure::metric_map}}
              \subfigure[Map representing Chiba Institute of Technology Shin-Narashino Campus with topological map]{\includegraphics[height=6cm]{../images/topological_map.png}
              \label{subfigure::topological_map}}
              \caption{Example of metric and topological map}
              \label{figure::metric_and_topological_map}
           \end{figure}
-          
+
         \newpage
 
-        \section{シナリオ}
-            シナリオとは，人間の道案内を文章で表現したものである．例えば，\fref{figure::scenario_exp}に表すような道案内の場合，シナリオは「次の角まで直進．右折．突き当たりまで直進．停止．」
-            のようになる．また，シナリオは「次の角まで」や「突き当たりまで」のような条件と「直進」「右折」のような行動の組み合わせにより作成され，行動の後には「．」をつけて区切る必要がある．
+         \section{シナリオ}
+             本研究におけるシナリオとは，人間の道案内を文章で表現したものである．例えば，\fref{figure::scenario_exp}に表すような道案内の場合，シナリオは「次の角まで直進．右折．突き当たりまで直進．停止．」
+             のようになる．また，シナリオは「次の角」や「突き当たり」のような条件と「直進」,「右折」のような行動の組み合わせにより作成される．
+             
         
-        \begin{figure}[H]
-         \centering
-         \includegraphics[width=12cm]{../images/scenario_fig}
-         \caption{An example of human directions}
-         \label{figure::scenario_exp}
-        \end{figure}
+         \begin{figure}[H]
+          \centering
+          \includegraphics[width=12cm]{../images/scenario_fig}
+          \caption{An example of human directions}
+          \label{figure::scenario_exp}
+         \end{figure}
 
-        \newpage
+         \newpage
           
         \section{Neural Network}
         ニューラルネットワークとは，人間の脳内の神経細胞（ニューロン）のネットワーク構造を模して作られた数式的なモデルである．
@@ -56,20 +56,23 @@
         \newpage
         
         \section{Convolutional Neural Network(CNN)}
-        CNNはディープラーニングに手法の1つであり，ニューラルネットワークを元に作られている．
+        CNNはディープラーニングの手法の1つであり，ニューラルネットワークを元に作られている．
         ニューラルネットワークは入力層，中間層，出力層により構成されているが，
         CNNはニューラルネットワークの中間層に畳み込み層，プーリング層を組み込んだネットワークである．
-        CNNにより画像認識をする場合の各層の役割を以下に記す．\\
+        CNNにより画像認識をする場合の各層の役割を以下に記す．\\\\
         ・畳み込み層：入力した画像データにフィルタをかけ，特徴マップを出力することで特徴抽出を行う\\
         ・プーリング層：特徴マップをいくつかの領域に分割し，各領域で最大値または平均化を行うことで
         重要な情報を残しながら画像を縮小する．\\
-        CNNは機械学習分野において主に画像・動画認識の分野で高い性能を発揮する．LeCunら\cite{cnn_paper}はCNNを用いて手書きの画像データから数字を識別できることを示し，その時のネットワークを
-        \fref{figure::cnn}に表す．
+
+
+        CNNは機械学習分野において主に画像・動画認識の分野で高い性能を発揮する．
+        LeCunら\cite{cnn_paper}はCNNを用いて手書きの画像データから数字を識別できることを示した．
+        また，使用されたネットワーク構造を\fref{figure::cnn}に表す．
 
         \begin{figure}[H]
          \centering
          \includegraphics[width=15cm]{../images/cnn_exp.png}
-         \caption{Architecture of CNN from\cite{cnn_paper}}
+         \caption{Architecture of CNN（出典：\cite{cnn_paper}）}
          \label{figure::cnn}
         \end{figure}
 
