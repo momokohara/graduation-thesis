@@ -4,26 +4,49 @@
     \chapter{要素技術}
         \section{トポロジカルマップ}
         私たちの身の回りには様々な種類の地図があり，活用されている．
-        例えば，\fref{subfigure::metric_map}に表すメトリックマップと呼ばれる地図は，普段人が目的地まで移動する際に用いられる．
-        しかし，本研究で用いているトポロジカルマップは\fref{subfigure::topological_map}のような形をしている．メトリックマップがやや複雑な形をしているのに対し，
+        例えば，\fref{figure::metric_map}に表すメトリックマップと呼ばれる地図は，普段人が目的地まで移動する際に用いられる．
+        しかし，本研究で用いているトポロジカルマップは\fref{figure::topological_map}のような形をしている．メトリックマップがやや複雑な形をしているのに対し，
         トポロジカルマップはより簡潔に，環境を抽象的に表現することができる．
 
 
         トポロジカルマップは，大きく分けてノードとエッジの2つの要素により構成されている．
-        \fref{subfigure::topological_map}では，赤い丸の図形で表現されているのがノードである．ノードには，地図の作成者が好きな情報を入れることができる．
+        \fref{figure::topological_map}では，赤い丸の図形で表現されているのがノードである．ノードには，地図の作成者が好きな情報を入れることができる．
         もう１つの要素であるエッジは，それぞれのノード同士を接続するのに用いられる．
         ノード同士に関係性がある場合，ノードとノードはエッジにより接続される．
 
-        \begin{figure}[htbp]
+        % \begin{figure}[htbp]
+        %     \centering
+        %      \subfigure[Map representing Chiba Institute of Technology Shin-Narashino Campus with metric map（出典：国土地理院より一部を加
+        %      工して作成\cite{kokudotiriin}）]{\includegraphics[height=5cm]{../images/metric_map.png}
+        %      \label{subfigure::metric_map}}
+        %      \subfigure[Map representing Chiba Institute of Technology Shin-Narashino Campus with topological map]{\includegraphics[height=6cm]{../images/topological_map.png}
+        %      \label{subfigure::topological_map}}
+        %      \caption{Example of metric and topological map}
+        %      \label{figure::metric_and_topological_map}
+        %   \end{figure}
+
+          \begin{figure}[htbp]
             \centering
-             \subfigure[Map representing Chiba Institute of Technology Shin-Narashino Campus with metric map（出典：国土地理院より一部を加
-             工して作成\cite{kokudotiriin}）]{\includegraphics[height=5cm]{../images/metric_map.png}
-             \label{subfigure::metric_map}}
-             \subfigure[Map representing Chiba Institute of Technology Shin-Narashino Campus with topological map]{\includegraphics[height=6cm]{../images/topological_map.png}
-             \label{subfigure::topological_map}}
-             \caption{Example of metric and topological map}
-             \label{figure::metric_and_topological_map}
-          \end{figure}
+            \begin{tabular}{cc}
+              %---- 最初の図 ---------------------------
+              \begin{minipage}[c]{0.45\linewidth}
+                \centering
+                \includegraphics[height=5cm]{../images/metric_map.png}
+                \subcaption{Map representing Chiba Institute of Technology Shin-Narashino Campus with metric map（出典：国土地理院より一部を加工して作成
+                \cite{kokudotiriin}）}
+                \label{figure::metric_map}
+              \end{minipage}&%\hspace*{2cm}
+              %---- 2番目の図 --------------------------
+              \begin{minipage}[c]{0.45\linewidth}
+                \centering
+                \includegraphics[height=5cm]{../images/topological_map.png}
+                \subcaption{Map representing Chiba Institute of Technology Shin-Narashino Campus with topological map}
+                \label{figure::topological_map}
+              \end{minipage}
+              %---- 図はここまで ----------------------
+            \end{tabular}
+            \caption{Example of metric and topological map}
+        \end{figure}
 
         \newpage
 
