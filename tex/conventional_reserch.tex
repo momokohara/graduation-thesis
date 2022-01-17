@@ -14,12 +14,11 @@
     また，各ノードは接続しているエッジの相対角度，その地点の通路の特徴情報を保持する．\\\\
     ・シナリオ：道案内を文章により表現したもので，「突き当たり」のような条件と「直進」，「右折」のような行動の組み合わせにより生成する．\\
 
-    \vspace{1cm}
 
     本ナビゲーション手法では，まず作成したシナリオをロボットに読み込ませる．そして，スタート地点からロボットを発進させ，
     シナリオの条件と行動に基づき経路に沿ってロボットを走行させることで目的地までのナビゲーションを行う．
     また，この手法では経路を走行中にシナリオに含まれる通路の特徴を検出する．通路の特徴検出は
-    Chenらが提案するLiDARを用いた通路検出手法（Toe-Finding Algolithm)\cite{toe-finding_paper}を参考にしており，
+    Chenらが提案するLiDARを用いた通路検出手法（Toe-Finding Algolithm)\cite{toe_finding_algolithm}を参考にしており，
     次頁に示す8種類に通路を分類する．通路の図は\fref{figure::aisle_exp}に示す．\\\\
          \circled{1}一本道（straight)\\
          \circled{2}行き止まり(dead end)\\
@@ -32,14 +31,14 @@
        
     \begin{figure}[H]
         \centering
-        \includegraphics[width = 16cm]{../images/shimada_topological_map.png}
+        \includegraphics[width = 14cm]{../images/shimada_topological_map.png}
         \caption{Topological map of previous research}
         \label{figure::topologicalmap_simada}
     \end{figure}
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width = 15cm]{../images/aisle_type2.png}
+        \includegraphics[width = 13cm]{../images/aisle_type2.png}
         \caption{Type of passage}
         \label{figure::aisle_exp}
     \end{figure}

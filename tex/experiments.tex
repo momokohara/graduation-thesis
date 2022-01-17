@@ -9,7 +9,7 @@
         実験環境は\fref{figure::3floor_map}に示す千葉工業大学津田沼キャンパス2号館3階の廊下とした．
         \begin{figure}[H]
          \centering
-         \includegraphics[width=15cm]{../images/MAP_Tsudanuma2-3.png}
+         \includegraphics[width=10cm]{../images/MAP_Tsudanuma2-3.png}
          \caption{Experiment environment}
          \label{figure::3floor_map}
         \end{figure}
@@ -20,7 +20,7 @@
 
         \begin{figure}[H]
         \centering
-        \includegraphics[width=7cm]{../images/experimental_machine_wide.png}
+        \includegraphics[width=13cm]{../images/experimental_machine_wide.png}
         \caption{ORNE-α}
         \label{figure::robot_image}
         \end{figure}
@@ -50,31 +50,61 @@
             \multicolumn{1}{c|}{Motor}                                                             & \multicolumn{1}{c}{Oriental motor TF-M30-24-3500-G15L/R}  \\ \hline
             \multicolumn{1}{c|}{Spherical camera}                                                  & \multicolumn{1}{c}{RICOH THETA V}  \\ \hline
             \end{tabular}
-            \label{table::robog_spec}
+            \label{table::robot_spec}
             \end{table}
+
+    \clearpage
 
     \section{全天球カメラを用いた通路分類の検証}
         \subsection{実験方法}
-        全天球カメラを取り付けた実ロボットを実験環境の25地点に移動させ，各地点で全天球カメラにより取得した画像データを用いて，
-        提案手法により通路の特徴分類ができるかどうかを検証する．
-        \fref{figure::experiment_point}の丸い図形により示す実験環境の25箇所にロボットを移動させ，
-        各地点で取得した全天球カメラ画像から提案した手法により通路の分類を行う．
-        また，先行研究で述べられた通り，人が道案内により移動する際には，向いている方向の情報も必要としているため，
-        同一箇所においてもロボットの向いている方向により分類される通路の特徴が変化する場合，ロボットの向きを変え，各向きを向いた状態
-        を1例とし，正しく通路分類が行えるかどうか検証する．
-        本実験の環境では，同一箇所においてもロボットの向きで通路の特徴が異なる箇所が●箇所存在したため，全●例の通路分類ができるかを検証する．
-        ロボットの移動にはジョイスティックコントローラーを使用する．実験の条件として，突き当たりと通路の判定する境界は，
-        ５m先が行き止まりかどうかにより判断を行うこととする．
+        全天球カメラを取り付けたロボットを\fref{figure::experiment_point}の丸の図形で示す25箇所に配置し，
+        各地点で全天球カメラの画像データを取得する．そして，提案手法を用いてそれらの画像から通路の特徴分類ができるかどうかを検証する．
+        \fref{figure::experiment_point}の赤，緑，オレンジ，青の丸は各地点の通路の特徴を表しており，それぞれ三叉路，角，一本道，突き当たりである．
+        また，三叉路と角の箇所では通路に侵入する際の向きにより\fref{figure::experiment1}のように各通路方向に特徴が変化する.
+        そのため，それらの箇所ではロボットの向きを変え，同一箇所でも複数の画像データをキャプチャして検証する．
+        本実験では，25箇所・47の画像データで検証を行った.
 
         \begin{figure}[H]
          \centering
-         \includegraphics[width=20cm]{../images/experiment_point.png}
-         \section{25 places to place robots in aisle classification experiments}
+         \includegraphics[width=14cm]{../images/experiment_point.png}
+         \caption{25 places to place robots in aisle classification experiments}
          \label{figure::experiment_point}
         \end{figure}
 
+        \begin{figure}[H]
+         \centering
+         \includegraphics[scale=0.35]{../images/robot_direction.png}
+         \caption{Relationship between the arrow in the map and the orientation of the robot}
+         \label{figure::experiment1}
+        \end{figure}
+
+        \newpage
+
         \subsection{結果と考察}
-        実験の結果．●例中●例で正しく通路の特徴を分類することができた．
-        正しく分類ができた例の一部をFig~に示す．また，分類に失敗してしまった例の一部をFig〜に示す．
-        今回，分類に失敗した原因として，○○ということが考えられる．
+        実験の結果，47の画像データ中42を正しく分類できることが確認できた.
+        通路の分類に成功した箇所とその地点での検出器による物体検出の結果を\fref{fugure::success_img}に示す．
+        成功した例では各画像データから検出器により物体検出が正しく行われており，通路の方向に基づき通路の分類ができていることを確認できた．
+        一方，分類に失敗した箇所は\fref{figure::experiment_result}に示す3箇所・5の画像データである．また，各矢印はロボットの向きを示す.
+        失敗の原因は以下の通りで, 全て検出器での誤検出が原因であった. \\
+        ・1:検出器による後方通路の検出失敗\\
+        ・2:検出器により通路を突き当たりと誤検出で正しく通路の特徴を分類することができた．
+
+        本実験により，検出器による物体検出が正しく行われた場合，通路の分類を正しく行えることがわかった．
+        また，検出器による誤検出は，通路と突き当たりの境界が曖昧であることが原因で発生したと考えられる．
+        突き当たり
+
+        % \begin{figure}
+        %     \centering
+        %     \includegraphics{}
+        %     \caption{}
+        %     \label{figure::success_img}
+        % \end{figure}
+
+
+        % \begin{figure}[H]
+        %     \centering
+        %     \includegraphics[scale=0.5]{../images/experiment_result}
+        %     \caption{Points where passage classification failed}
+        %     \label{figure::experiment_result}
+        % \end{figure}
 \end{document}
