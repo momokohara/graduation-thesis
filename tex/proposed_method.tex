@@ -47,7 +47,7 @@
               \begin{minipage}[c]{\textwidth}
                 \centering
                 \includegraphics[height=4.2cm]{../images/no_processing.png}
-                \subcaption{no processing image}
+                \subcaption{No processing image}
                 \label{figure::no_proc}
               \end{minipage}\\
               %\hspace*{1cm}
@@ -118,10 +118,10 @@
             \label{table::learning}
             \begin{tabular}{l|l}
             \hline
-            \multicolumn{1}{c|}{training}   & \multicolumn{1}{c}{3540}                \\ \hline
-            \multicolumn{1}{c|}{validation} & \multicolumn{1}{c}{160}                  \\ \hline
-            \multicolumn{1}{c|}{epoch}      & \multicolumn{1}{c}{300}                \\ \hline
-            \multicolumn{1}{c|}{batch}      & \multicolumn{1}{c}{8}                   \\ \hline
+            \multicolumn{1}{c|}{Training}   & \multicolumn{1}{c}{3540}                \\ \hline
+            \multicolumn{1}{c|}{Validation} & \multicolumn{1}{c}{160}                  \\ \hline
+            \multicolumn{1}{c|}{Epoch}      & \multicolumn{1}{c}{300}                \\ \hline
+            \multicolumn{1}{c|}{Batch}      & \multicolumn{1}{c}{8}                   \\ \hline
             \end{tabular}
         \end{table}
 
@@ -145,7 +145,7 @@
               \end{minipage}
               %---- 図はここまで ----------------------
             \end{tabular}
-            \caption{Transition of LOSS during learning}
+            \caption{Transition of loss during learning}
             \label{figure::training_loss}
         \end{figure}
 
@@ -158,7 +158,7 @@
         また，画像中の各領域とそれに対応している方向の関係を\fref{figure::aisle_classification1}により表す．
         本手法では，検出器により通路が検出された場合，まず検出された各通路のバウンディングボックスの中心座標を計算する．
         そして，中心座標が\fref{figure::aisle_classification1}の各赤枠の領域内にある場合，それに対応する方向に通路があるとして扱う．
-        最終的に，\tref{figure:aisle_type2}に示すように，通路がある方向から画像の通路がどの通路の特徴に相当するのかを分類する．
+        最終的に，\fref{figure::aisle_type2}に示すように，通路がある方向から画像の通路がどの通路の特徴に相当するのかを分類する．
 
         \begin{figure}[htbp]
             \centering

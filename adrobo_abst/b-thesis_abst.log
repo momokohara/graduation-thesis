@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  16 JAN 2022 05:48
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  19 JAN 2022 07:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -175,65 +175,70 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 33.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 33.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 33.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 33.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 30.
 
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 33.
+(Font)              using `JT1/mc/m/n' instead on input line 30.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 33.
+(Font)              using `JY1/mc/m/n' instead on input line 30.
 
 
 LaTeX Font Warning: Font shape `JT1/mc/b/it' undefined
-(Font)              using `JT1/mc/b/n' instead on input line 33.
+(Font)              using `JT1/mc/b/n' instead on input line 30.
 
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 33.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 33.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 30.
 
 LaTeX Font Warning: Font shape `JY1/mc/b/it' undefined
-(Font)              using `JY1/mc/b/n' instead on input line 33.
+(Font)              using `JY1/mc/b/n' instead on input line 30.
 
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 33.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 33.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in alignment at lines 35--35
+Underfull \hbox (badness 10000) in alignment at lines 32--32
 []
  []
 
 
-Overfull \hbox (8.53581pt too wide) in paragraph at lines 35--35
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 32--32
 [][][][] 
  []
 
 File: ./fig/fontbig2_proposed_method.png Graphic file (type bmp)
 <./fig/fontbig2_proposed_method.png>
+
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 66--67
+[][] 
+ []
+
 [1
 
 
@@ -241,22 +246,25 @@ File: ./fig/fontbig2_proposed_method.png Graphic file (type bmp)
 ]
 File: ./fig/new_experimental_point.png Graphic file (type bmp)
 <./fig/new_experimental_point.png>
-File: ./fig/experimental_machine_wide.png Graphic file (type bmp)
-<./fig/experimental_machine_wide.png>
+
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 92--93
+[][] 
+ []
+
 File: ./fig/experiment_result.png Graphic file (type bmp)
 <./fig/experiment_result.png>
- [2] (./b-thesis_abst.aux)
+[2] (./b-thesis_abst.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2405 strings out of 481768
- 30306 string characters out of 5933619
- 273061 words of memory out of 5000000
- 17802 multiletter control sequences out of 15000+600000
+ 2400 strings out of 481768
+ 30135 string characters out of 5933619
+ 272053 words of memory out of 5000000
+ 17798 multiletter control sequences out of 15000+600000
  545030 words of font info for 74 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 30i,7n,31p,270b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,7n,31p,748b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on b-thesis_abst.dvi (2 pages, 12180 bytes).
+Output written on b-thesis_abst.dvi (2 pages, 12704 bytes).

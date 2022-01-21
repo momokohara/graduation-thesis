@@ -9,7 +9,7 @@
         実験環境は\fref{figure::3floor_map}に示す千葉工業大学津田沼キャンパス2号館3階の廊下とした．
         \begin{figure}[H]
          \centering
-         \includegraphics[width=10cm]{../images/MAP_Tsudanuma2-3.png}
+         \includegraphics[width=12cm]{../images/MAP_Tsudanuma2-3.png}
          \caption{Experiment environment}
          \label{figure::3floor_map}
         \end{figure}
@@ -20,7 +20,7 @@
 
         \begin{figure}[H]
         \centering
-        \includegraphics[width=13cm]{../images/experimental_machine_wide.png}
+        \includegraphics[width=13cm]{../images/experimental_machine3.png}
         \caption{ORNE-α}
         \label{figure::robot_image}
         \end{figure}
@@ -43,7 +43,7 @@
             \multicolumn{1}{c|}{item}                                                              & \multicolumn{1}{c}{ORNE-α}                              \\ \hline
             \multicolumn{1}{c|}{Depth{[}mm{]}}                                                     & \multicolumn{1}{c}{710} \\ \hline
             \multicolumn{1}{c|}{Wide{[}mm{]}}                                                      & \multicolumn{1}{c}{560}                                 \\ \hline
-            \multicolumn{1}{c|}{Height{[}mm{]}}                                                    & \multicolumn{1}{c}{810}                                  \\ \hline
+            \multicolumn{1}{c|}{Height{[}mm{]}}                                                    & \multicolumn{1}{c}{1070}                                  \\ \hline
             \multicolumn{1}{c|}{Weight{[}kg{]}}                                                    & \multicolumn{1}{c}{20}                                   \\ \hline
             \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Wheel diameter\\ {[}mm{]}\end{tabular}} & \multicolumn{1}{c}{304}                                   \\ \hline
             \multicolumn{1}{c|}{Battery}                                                           & \multicolumn{1}{c}{LONG WP12-12 × 2}                      \\ \hline
@@ -58,7 +58,7 @@
     \section{全天球カメラを用いた通路分類の検証}
         \subsection{実験方法}
         全天球カメラを取り付けたロボットを\fref{figure::experiment_point}の丸の図形で示す25箇所に配置し，
-        各地点で全天球カメラの画像データを取得する．そして，提案手法を用いてそれらの画像から通路の特徴分類ができるかどうかを検証する．
+        各地点で全天球カメラの画像データを取得する．そして，提案手法を用いてそれらの画像から通路の特徴を分類できるか検証する．
         \fref{figure::experiment_point}の赤，緑，オレンジ，青の丸は各地点の通路の特徴を表しており，それぞれ三叉路，角，一本道，突き当たりである．
         また，三叉路と角の箇所では通路に侵入する際の向きにより\fref{figure::experiment1}のように各通路方向に特徴が変化する.
         そのため，それらの箇所ではロボットの向きを変え，同一箇所でも複数の画像データをキャプチャして検証する．
@@ -66,14 +66,14 @@
 
         \begin{figure}[H]
          \centering
-         \includegraphics[width=14cm]{../images/experiment_point.png}
+         \includegraphics[width=15.5cm]{../images/experiment_point.png}
          \caption{25 places to place robots in aisle classification experiments}
          \label{figure::experiment_point}
         \end{figure}
 
         \begin{figure}[H]
          \centering
-         \includegraphics[scale=0.35]{../images/robot_direction.png}
+         \includegraphics[scale=0.43]{../images/robot_direction.png}
          \caption{Relationship between the arrow in the map and the orientation of the robot}
          \label{figure::experiment1}
         \end{figure}
@@ -82,29 +82,118 @@
 
         \subsection{結果と考察}
         実験の結果，47の画像データ中42を正しく分類できることが確認できた.
-        通路の分類に成功した箇所とその地点での検出器による物体検出の結果を\fref{fugure::success_img}に示す．
+        通路の分類に成功した箇所とその地点での検出器による物体検出の結果を\fref{figure::3way_junction_right}から\fref{figure::deadend}に示す．
         成功した例では各画像データから検出器により物体検出が正しく行われており，通路の方向に基づき通路の分類ができていることを確認できた．
-        一方，分類に失敗した箇所は\fref{figure::experiment_result}に示す3箇所・5の画像データである．また，各矢印はロボットの向きを示す.
+        一方，分類に失敗した箇所は\fref{figure::experiment_result}(図はあとで追加します)に示す3箇所・5の画像データである．また，各矢印はロボットの向きを示す.
         失敗の原因は以下の通りで, 全て検出器での誤検出が原因であった. \\
         ・1:検出器による後方通路の検出失敗\\
-        ・2:検出器により通路を突き当たりと誤検出で正しく通路の特徴を分類することができた．
+        ・2:検出器により通路を突き当たりと誤検出で正しく通路の特徴を分類することができた．\\
 
-        本実験により，検出器による物体検出が正しく行われた場合，通路の分類を正しく行えることがわかった．
-        また，検出器による誤検出は，通路と突き当たりの境界が曖昧であることが原因で発生したと考えられる．
-        突き当たり
+        本実験では，検出器による物体検出が正しく行われた場合，通路の分類を正しく行えることがわかった．
+        このことから，通路の分類には検出器による物体検出の精度が大きく関わってくるのではないかと考えられる．
+        そこで，今後の展望として通路分類の精度を向上させるためには以下のことをすればよいのではないかと考える．\\
+        ・検出器による物体検出の精度を向上させる\\
+        ・検出器による物体検出が失敗した場合の対処として，通路の分類にLiDARを補助的に用いる
 
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_3way_right.png}
+            \caption{3-way junction(right)}
+            \label{figure::3way_junction_right}
+        \end{figure}
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_3way_center.png}
+            \caption{3-way junction(center)}
+            \label{figure::3way_junction_center}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_3way_left.png}
+            \caption{3-way junction(left)}
+            \label{figure::3way_junction_left}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_straight_road.png}
+            \caption{straight road}
+        \end{figure}
+             
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_end.png}
+            \caption{dead end}
+            \label{figure::deadend}
+        \end{figure}  
+
+        \begin{figure} [H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_corner_right.png}
+            \caption{corner(right)}
+            \label{figure::corner_right}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_corner_left.png}
+            \caption{corner(left)}
+            \label{figure::corner_left}
+        \end{figure}  
+
+        %失敗画像
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_result.png}
+            \caption{Points where passage classification failed}
+            \label{figure::experiment_result}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_failed1.png}
+            \caption{Failed image data1}
+            \label{figure::experiment_failed1}
+        \end{figure}
+             
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_failed2.png}
+            \caption{Failed image data2}
+            \label{figure::experiment_failed2}
+        \end{figure}  
+
+        \begin{figure} [H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_failed3.png}
+            \caption{Failed image data3}
+            \label{figure::experiment_failed3}
+        \end{figure}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_failed4.png}
+            \caption{Failed image data4}
+            \label{figure::experiment_failed4}
+        \end{figure}  
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.5]{../images/experiment_failed5.png}
+            \caption{Failed image data5}
+            \label{figure::experiment_failed5}
+        \end{figure}  
+
+
+
+        
         % \begin{figure}
         %     \centering
         %     \includegraphics{}
         %     \caption{}
         %     \label{figure::success_img}
-        % \end{figure}
-
-
-        % \begin{figure}[H]
-        %     \centering
-        %     \includegraphics[scale=0.5]{../images/experiment_result}
-        %     \caption{Points where passage classification failed}
-        %     \label{figure::experiment_result}
         % \end{figure}
 \end{document}

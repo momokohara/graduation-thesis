@@ -23,10 +23,7 @@
     
     \makeatother
     
-    \abstract{We propose a passage classification method based on omnidirectional camera images.
-    From the 360-degree horizontal image acquired by the omnidirectional camera, 
-    objects such as passages and doors are detected using the YOLO classifier, 
-    and the detected passages and the characteristics of which passages are classified from the direction.}
+    \abstract{We propose a passage classification method based on omnidirectional camera images. In this method, a 360-degree horizontal image is acquired by an omnidirectional camera. Next, the acquired camera image is input to the YOLO detector to detect objects such as passages and doors in the image. After that, the detected passage and the direction of the passage are obtained, and the characteristic of which passage is classified. Finally, in this study, we experimentally verified whether the characteristics of the passage can be classified by the proposed method. In the experiment, it was confirmed whether the characteristics of the passage could be classified from the image data acquired in the actual environment.}
     
     \keywords{Topological map，Machine learning，Directions}
     
@@ -60,13 +57,13 @@
     
     \section{提案手法}%===========================
     提案手法の概念図を\reffig{proposed_method}に示す．この手法では，まず全天球カメラから水平360度の画像を取得する．
-    次に，画像からYOLOの学習器を用いて通路やドアなどの物体を検出する．
+    次に，画像からYOLOの検出器を用いて通路やドアなどの物体を検出する．
     最後に，検出された通路とその方向からどの通路の特徴に相当するのかを分類する．
-    \reffig{proposed_method}の例では，学習器による出力から通路が3つ検出されている．また，通路はそれぞれカメラに対して前，後ろ，右方向
+    \reffig{proposed_method}の例では，検出器による出力から通路が3つ検出されている．また，通路はそれぞれカメラに対して前，後ろ，右方向
     に検出されているため，この通路の特徴は右に曲がれる三叉路であることがわかる．
     
     \begin{figure}
-        \includegraphics[width=0.45\textwidth]{./fig/fontbig2_proposed_method.png}
+        \includegraphics[width=0.5\textwidth]{./fig/fontbig2_proposed_method.png}
         \caption{Conceptual diagram of passage classification method}
         \label{fig:proposed_method}
     \end{figure}
@@ -92,27 +89,27 @@
      本実験では，25箇所・47の画像データで検証を行った．
 
         \begin{figure}[!b]
-            \includegraphics[width=0.46\textwidth]{./fig/new_experimental_point.png}
+            \includegraphics[width=0.5\textwidth]{./fig/new_experimental_point.png}
             \caption{25 point to place robots in aisle classification experiments}
             \label{fig:experiment_point}
         \end{figure}
 
      \subsection{実験装置}%===========================
-     実験装置を\reffig{experiment_machine}に示す．また，図中のカメラを使用する．
+     実験には本研究室で開発を行なっているORNE-αに全天球カメラを取り付けて使用した．また，全天球カメラは株式会社リコーのTHETA Vを使用した．
     
-        \begin{figure}[!b]
-            \includegraphics[width=0.46\textwidth]{./fig/experimental_machine_wide.png}
-            \caption{The experimental setup}
-            \label{fig:experiment_machine}
-            \end{figure}
+        % \begin{figure}[!b]
+        %     \includegraphics[width=0.46\textwidth]{./fig/experimental_machine_wide.png}
+        %     \caption{The experimental setup}
+        %     \label{fig:experiment_machine}
+        %     \end{figure}
     
      \subsection{実験結果}%===========================
      実験の結果，47の画像データの内，42を正しく分類できることが確認できた．
      通路の分類に失敗した箇所は\reffig{miss_classification}に示すように3箇所・5の画像データであり，
      各矢印はロボットの向きを示す．
      失敗の原因は以下の通りで,全て検出器での誤検出が原因であった.\\
-     ・1：学習器による後方通路の検出失敗\\
-     ・2：学習器により通路を突き当たりと誤検出
+     ・1：検出器による後方通路の検出失敗\\
+     ・2：検出器により通路を突き当たりと誤検出
      \begin{figure}[!b]
          \includegraphics[width=0.46\textwidth]{./fig/experiment_result.png}
          \caption{Points where passage classification failed}
@@ -120,7 +117,7 @@
      \end{figure}
     
     \section{結\hspace{2zw}言}%===========================
-    本研究では，全天球カメラにより取得した水平360度の画像から，YOLOの学習器を用いて通路などの物体検出を行い，
+    本研究では，全天球カメラにより取得した水平360度の画像から，YOLOの検出器を用いて通路などの物体検出を行い，
     検出された通路の方向に基づき通路を分類する手法を提案して有効性を検証した．
     結果的に，47例中42例正しく分類できることを確認した．
 

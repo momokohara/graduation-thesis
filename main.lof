@@ -1,24 +1,29 @@
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Detecting an object using YOLO\relax }}{8}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Detecting an object using YOLO\relax }}{9}{figure.caption.9}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of metric and topological map\relax }}{10}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces An example of human directions\relax }}{11}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Neural network architecture\relax }}{12}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Architecture of CNN（出典：\cite {cnn_paper}）\relax }}{13}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces The YOLO Detection System.(出典:\cite {yolo_paper_v1})\relax }}{14}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of metric and topological map\relax }}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces An example of human directions\relax }}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Neural network architecture\relax }}{13}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Architecture of CNN（出典：\cite {cnn_paper}）\relax }}{14}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The YOLO Detection System(出典:\cite {yolo_paper_v1})\relax }}{15}{figure.caption.22}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Topological map of previous research\relax }}{17}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Type of passage\relax }}{18}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Topological map of previous research\relax }}{18}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Type of passage\relax }}{19}{figure.caption.25}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow of passage recognition method\relax }}{20}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Preprocessing of spherical camera images\relax }}{21}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of a dataset\relax }}{22}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Network structure used for learning(出典：\cite {yolov5_figure})\relax }}{23}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Transition of LOSS during learning\relax }}{24}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow of passage classification after object detection by learner\relax }}{26}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow of passage recognition method\relax }}{21}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Preprocessing of spherical camera images\relax }}{22}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of a dataset\relax }}{23}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Network structure used for learning(出典：\cite {yolov5_figure})\relax }}{24}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Transition of loss during learning\relax }}{25}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Flow of passage classification after object detection by learner\relax }}{27}{figure.caption.38}%
 \addvspace {10\jsc@mpt }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Experiment environment\relax }}{27}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces ORNE-α\relax }}{28}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces 25 places to place robots in aisle classification experiments\relax }}{30}{figure.caption.49}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Relationship between the arrow in the map and the orientation of the robot\relax }}{31}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Experiment environment\relax }}{29}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces ORNE-α\relax }}{30}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces 25 places to place robots in aisle classification experiments\relax }}{31}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Relationship between the arrow in the map and the orientation of the robot\relax }}{32}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces 3-way junction(right)\relax }}{34}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces 3-way junction(center)\relax }}{34}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces 3-way junction(left)\relax }}{35}{figure.caption.54}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces straight road\relax }}{35}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces dead end\relax }}{36}{figure.caption.56}%
 \addvspace {10\jsc@mpt }

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  16 JAN 2022 19:00
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2021.12.10)  18 JAN 2022 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -842,21 +842,21 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] (./main.lof)
+ [2] (./main.lof [3
+
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [3
-
-] (./main.lot)
+ [4] (./main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [4
+ [5
 
-] (./tex/youyaku.tex) [5
+] (./tex/youyaku.tex) [6
 
-] (./tex/abstract.tex) [6
+] (./tex/abstract.tex) [7
 
 ] (./tex/prolegomenon.tex
 第1章
@@ -872,12 +872,12 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 5.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 5.
-[7
+[8
 
 ]
 File: tex/../images/yolo_aisle.jpg Graphic file (type bmp)
 <tex/../images/yolo_aisle.jpg>
- [8]) [9] (./tex/element_technology.tex
+ [9]) [10] (./tex/element_technology.tex
 第2章
 File: tex/../images/metricmap2.png Graphic file (type bmp)
 <tex/../images/metricmap2.png>
@@ -887,15 +887,15 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 36.
 File: tex/../images/topologicalmap2.png Graphic file (type bmp)
 <tex/../images/topologicalmap2.png>
-[10
+[11
 
 ]
 File: tex/../images/scenario_fig.png Graphic file (type bmp)
 <tex/../images/scenario_fig.png>
- [11]
+ [12]
 File: tex/../images/NN.png Graphic file (type bmp)
 <tex/../images/NN.png>
- [12]
+ [13]
 File: tex/../images/cnn_exp.png Graphic file (type bmp)
 <tex/../images/cnn_exp.png>
 
@@ -903,26 +903,26 @@ Overfull \hbox (8.53766pt too wide) in paragraph at lines 97--98
  [][] 
  []
 
-[13]
+[14]
 File: tex/../images/yolo_exp.png Graphic file (type bmp)
 <tex/../images/yolo_exp.png>
-) [14] (./tex/conventional_reserch.tex
+) [15] (./tex/conventional_reserch.tex
 第3章
-[15
+[16
 
 ]
 File: tex/../images/shimada_topological_map.png Graphic file (type bmp)
 <tex/../images/shimada_topological_map.png>
- [16]
+ [17]
 File: tex/../images/aisle_type2.png Graphic file (type bmp)
 <tex/../images/aisle_type2.png>
- [17]) [18] (./tex/proposed_method.tex
+ [18]) [19] (./tex/proposed_method.tex
 第4章
 File: tex/../images/proposed_method.png Graphic file (type bmp)
 <tex/../images/proposed_method.png>
-[19
+[20
 
-] [20]
+] [21]
 File: tex/../images/no_processing.png Graphic file (type bmp)
 <tex/../images/no_processing.png>
 File: tex/../images/proc_image2.png Graphic file (type bmp)
@@ -939,7 +939,7 @@ Overfull \hbox (36.9904pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
-[21] [22]
+[22] [23]
 File: tex/../images/yolov5_architecture.jpg Graphic file (type bmp)
 <tex/../images/yolov5_architecture.jpg>
 File: tex/../images/train_loss.png Graphic file (type bmp)
@@ -951,12 +951,9 @@ Overfull \hbox (12.00002pt too wide) in paragraph at lines 130--148
  [][] 
  []
 
-[23
+[24
 
-] [24]
-
-LaTeX Warning: Reference `figure:aisle_type2' on page 25 undefined on input line 161.
-
+] [25]
 File: tex/../images/yolo_aisle.jpg Graphic file (type bmp)
 <tex/../images/yolo_aisle.jpg>
 File: tex/../images/aisle_classification1.png Graphic file (type bmp)
@@ -968,17 +965,18 @@ Overfull \hbox (12.00002pt too wide) in paragraph at lines 165--189
  [][] 
  []
 
-) [25
+) [26
 
-] [26] (./tex/experiments.tex
+] [27] (./tex/experiments.tex
 第5章
 File: tex/../images/MAP_Tsudanuma2-3.png Graphic file (type bmp)
 <tex/../images/MAP_Tsudanuma2-3.png>
-File: tex/../images/experimental_machine_wide.png Graphic file (type bmp)
-<tex/../images/experimental_machine_wide.png>
-[27
+[28
 
-] [28] [29]
+]
+File: tex/../images/experimental_machine3.png Graphic file (type bmp)
+<tex/../images/experimental_machine3.png>
+ [29] [30]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 59.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -989,31 +987,45 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 59.
 File: tex/../images/experiment_point.png Graphic file (type bmp)
 <tex/../images/experiment_point.png>
+
+Overfull \hbox (22.76404pt too wide) in paragraph at lines 69--70
+ [][] 
+ []
+
 File: tex/../images/robot_direction.png Graphic file (type bmp)
 <tex/../images/robot_direction.png>
- [30
+[31
 
-] [31]
+] [32]
 
-LaTeX Warning: Reference `fugure::success_img' on page 32 undefined on input line 85.
+LaTeX Warning: Reference `figure::experiment_result' on page 33 undefined on input line 87.
 
-
-LaTeX Warning: Reference `figure::experiment_result' on page 32 undefined on input line 87.
-
-) [32] (./tex/summary.tex
+File: tex/../images/experiment_3way_right.png Graphic file (type bmp)
+<tex/../images/experiment_3way_right.png>
+[33]
+File: tex/../images/experiment_3way_center.png Graphic file (type bmp)
+<tex/../images/experiment_3way_center.png>
+File: tex/../images/experiment_3way_left.png Graphic file (type bmp)
+<tex/../images/experiment_3way_left.png>
+ [34]
+File: tex/../images/experiment_straight_road.png Graphic file (type bmp)
+<tex/../images/experiment_straight_road.png>
+File: tex/../images/experiment_end.png Graphic file (type bmp)
+<tex/../images/experiment_end.png>
+ [35]) [36] (./tex/summary.tex
 第6章
-) [33
+) [37
 
-] (./tex/reference.tex [34
+] (./tex/reference.tex [38
 
-]) [35]
+]) [39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
  (./main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 36.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0982840F97B69955F2A7B6E502DEE4FB;1560.
+(rerunfilecheck)             Checksum: 45FD16CCA1509D725A2CC38D16BB3B8B;1506.
 
 
 LaTeX Warning: There were undefined references.
@@ -1021,12 +1033,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 36.
  ) 
 Here is how much of TeX's memory you used:
- 35112 strings out of 481768
- 808020 string characters out of 5933619
- 1178926 words of memory out of 5000000
- 49945 multiletter control sequences out of 15000+600000
+ 35133 strings out of 481768
+ 808794 string characters out of 5933619
+ 1180136 words of memory out of 5000000
+ 49961 multiletter control sequences out of 15000+600000
  546779 words of font info for 95 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  55i,14n,73p,793b,909s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (36 pages, 95876 bytes).
+Output written on main.dvi (40 pages, 102540 bytes).
